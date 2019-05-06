@@ -1,0 +1,45 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 1.5em;
+  margin: 0;
+  font-family: Montserrat;
+  // display: grid;
+  // grid-template-columns: auto 1fr;
+  display: flex;
+}
+
+main {
+  background-color: midnightblue;
+  flex-grow: 1;
+  padding: 10px;
+  // display: grid;
+  // justify-items: right;
+  align-items: flex-start;
+  justify-content: flex-end;
+  display: flex;
+  span {
+    font-size: 2.5em;
+    cursor: pointer;
+  }
+}
+
+nav {
+  width: 20vw;
+  background-color: darkslateblue;
+  line-height: 1.5em;
+  color: white;
+  padding: 0 2em;
+  // clip-path: ;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      padding: 1em 0;
+      font-weight: bold;
+    }
+  }
+}
