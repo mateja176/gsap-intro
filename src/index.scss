@@ -12,8 +12,10 @@ body {
   display: flex;
 }
 
+$background: midnightblue;
+
 main {
-  background-color: midnightblue;
+  background-color: $background;
   flex-grow: 1;
   padding: 10px;
   // display: grid;
@@ -28,12 +30,12 @@ main {
 }
 
 nav {
-  width: 20vw;
+  width: 20%;
   background-color: darkslateblue;
   line-height: 1.5em;
   color: white;
   padding: 0 2em;
-  // clip-path: ;
+  position: relative;
   ul {
     list-style-type: none;
     padding: 0;
@@ -41,5 +43,13 @@ nav {
       padding: 1em 0;
       font-weight: bold;
     }
+  }
+  div {
+    height: 0;
+    width: 100%;
+    background: $background;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
